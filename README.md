@@ -55,3 +55,17 @@ cmake ..
 make
 ./3D_object_tracking
 ```
+## Radar Target Generation and Detection
+In this project, I wrote code to model a Frequency Modulated Continuous Wave Radar and perform signal processing for it using the following process:
+1. Radar Configuration
+2. Moving Target Generation
+3. Signal Propagation
+4. Processing Received Reflected Signal
+5. Range/Doppler Fast Fourier Transform (FFT)
+6. CFAR Detection
+
+### Prerequisites
+Matlab. 2019b is version I used locally
+
+### How to Run
+Open the script **Radar_Target_Generation_and_Detection.m** and run
