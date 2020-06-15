@@ -1,5 +1,5 @@
 # Udacity-Sensor-Fusion
-Completed Projects from Udacity's Sensor Fusion NanoDegree
+Completed Projects from Udacity's Sensor Fusion NanoDegree (SFND)
 
 ## Getting Started
 Clone the repository to your local machine by running the following command in a terminal window or command prompt from the location you wish to copy the folder
@@ -32,6 +32,9 @@ cmake ..
 make
 ./environment
 ```
+### Explanation of the Running Program
+In the `main` function in `environment.cpp`, a stream of pcd files is read in, then processed individually using the segmentation and clustering process mentioned above. Each point in the point cloud data has a x,y,z position value and an intensity value. The green dots indicate the ground which is separated using plane segmentation. The vehicle roof is then bounded with a light blue bounding box based on the fixed position of the sensor. Clustering is then performed, and the clusters (vehicles) are identified by red bounding boxes. 
+
 ## 3D Object Tracking
 
 <img src="SFND_3D_Object_Tracking/images/course_code_structure.png" width="779" height="414" />
