@@ -1,0 +1,23 @@
+{
+    "configurations": [
+        {
+            "name": "Mac",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${workspaceFolder}/../../opencv-4.3.0/modules/highgui/include/",
+                "${workspaceFolder}/../../opencv-4.3.0/modules/imgproc/include/",
+                "${workspaceFolder}/../../opencv-4.3.0/modules/core/include/",
+                "${workspaceFolder}/../../opencv-4.3.0/**",
+                "${workspaceFolder}/../../build_opencv/**",
+                "${workspaceFolder}/../../opencv_contrib-4.3.0/modules/xfeatures2d/include/"
+            ],
+            "defines": [],
+            "macFrameworkPath": [],
+            "compilerPath": "/usr/local/bin/gcc-9",
+            "cStandard": "c11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "gcc-x64"
+        }
+    ],
+    "version": 4
+}
