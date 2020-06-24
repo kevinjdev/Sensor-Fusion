@@ -65,6 +65,10 @@ cmake ..
 make
 ./3D_object_tracking
 ```
+
+### Explanation of the Running Program
+In the file `FinalProject_Camera.cpp` the `main` function is called and loops over all the images. Each image is loaded into a buffer and then object classification is performed using YOLO. Lidar point cloud data is then loaded, cropped, and then associated with vehicles of interest in the image. Keypoints are then detected and matched with the option of choosing various algorithms defined in `matching2D_student.cpp`. Once matching is complete, then the Time to Collision (TTC) is calculated using the Lidar data and Camera Data. The image is then displayed with the TTC Data.
+
 ## Radar Target Generation and Detection
 
 <img src="SFND_Radar_Target_Generation_and_Detection/images/radar-project.png" width="700" height="400" />
