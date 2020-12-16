@@ -1,4 +1,5 @@
 #include <iostream>
+#include <fstream>
 #include "tools.h"
 #include <random>
 
@@ -138,5 +139,21 @@ pcl::PointCloud<pcl::PointXYZ>::Ptr Tools::loadPcd(std::string file)
   //std::cerr << "Loaded " << cloud->points.size () << " data points from "+file << std::endl;
 
   return cloud;
+}
+
+void Tools::saveRMSE(std::string fileName)
+{
+	VectorXd rmse = CalculateRMSE(estimations, ground_truth);
+	
+	std::ofstream outputFile(fileName);
+	if(outputFile.is_open())
+	{
+		outputFile << rmse;
+		outputFile.close();
+	}
+	else
+	{
+		std::cerr << "Unable to open file to write RMSE" << std::endl;
+	} 
 }
 

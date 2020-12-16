@@ -39,5 +39,6 @@ int main(int argc, char** argv)
 		time_us = 1000000*frame_count/frame_per_sec;
 		
 	}
+	highway.tools.saveRMSE("RMSE.txt"); // output final RMSE values to a file
 
 }
